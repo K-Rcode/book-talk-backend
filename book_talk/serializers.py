@@ -12,7 +12,7 @@ class CommentSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Comment
-        fields = ('id', 'time_stamp', 'owner', 'body', 'book_id', 'owner', 'book')
+        fields = ('id',  'book', 'body', 'time_stamp', 'owner', 'book_id')
 
 
 class BookSerializer(serializers.HyperlinkedModelSerializer):
