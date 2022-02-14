@@ -1,0 +1,1 @@
+web: gunicorn django_book_talk.wsgi
