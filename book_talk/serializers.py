@@ -17,8 +17,8 @@ class CommentSerializer(serializers.HyperlinkedModelSerializer):
 
 class BookSerializer(serializers.HyperlinkedModelSerializer):
     comments = CommentSerializer(many=True, read_only=True)
-    book_owner = serializers.ReadOnlyField(source='book_owner.username')
+    owner = serializers.ReadOnlyField(source='owner.username')
 
     class Meta:
         model = Book
-        fields = ('id', 'title', 'author', 'image', 'category', 'description', 'book_owner', 'comments')
+        fields = ('id', 'title', 'author', 'image', 'category', 'description', 'owner', 'comments')

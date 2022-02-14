@@ -8,7 +8,7 @@ class Book(models.Model):
    image = models.URLField()
    category = models.CharField(max_length=100)
    description = models.TextField()
-   book_owner = models.ForeignKey('users.User', related_name='books', on_delete=models.CASCADE)
+   owner = models.ForeignKey('users.User', related_name='books', on_delete=models.CASCADE)
 
    def __str__(self):
        return self.title
@@ -20,3 +20,7 @@ class Comment(models.Model):
     time_stamp = models.DateField(auto_now=True)
     owner = models.ForeignKey('users.User', related_name='comments', on_delete=models.CASCADE)
     body = models.TextField()
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='comments')
+
+    def __str__(self):
+        return self.body
