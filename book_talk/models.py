@@ -5,14 +5,14 @@ from django.db import models
 class Book(models.Model):
    title = models.CharField(max_length=100)
    author = models.CharField(max_length=100)
-   image = models.URLField()
-   category = models.CharField(max_length=100)
+   image = models.URLField(blank=True)
+   category = models.CharField(max_length=100, blank=True)
    description = models.TextField()
    owner = models.ForeignKey('users.User', related_name='books', on_delete=models.CASCADE)
-   publisher = models.CharField(max_length=100)
-   published_date = models.DateField()
-   google_id = models.CharField(max_length=100)
-   preview_link = models.URLField()
+   publisher = models.CharField(max_length=100, blank=True)
+   published_date = models.CharField(max_length=100, blank=True)
+   google_id = models.CharField(max_length=100, blank=True)
+   preview_link = models.URLField(blank=True)
 
    def __str__(self):
        return self.title
