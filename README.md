@@ -1,7 +1,11 @@
 # Book Talk API
 
-<img width="1727" alt="booklist_pg" src="https://user-images.githubusercontent.com/93682733/154695251-55767442-b75e-42f2-bf00-da8eb0bc0536.png">
+#### Example response at '/books'
 
+![Screen Shot 2022-03-16 at 6 52 55 PM](https://user-images.githubusercontent.com/93796800/158710294-9d31491b-bf83-4e97-837d-54ac1c88ccd4.png)
+
+#### Example response at '/comments'
+![Screen Shot 2022-03-16 at 6 53 15 PM](https://user-images.githubusercontent.com/93796800/158710313-1a5abe5d-42e8-42d4-8094-766de8036b16.png)
 
 ## Description 
 
