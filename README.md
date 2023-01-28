@@ -33,6 +33,10 @@ pipenv shell
 ```
 pipenv install
 ``` 
+- Start the server
+```
+python manage.py runserver
+```
 
 - Download the Postgres app from their website and start a local server.
 - Create a local database using Postgres to store your data. 
