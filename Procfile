@@ -1,1 +1,1 @@
-web: gunicorn django_book_talk.wsgi
+web: python manage.py migrate && python manage.py collectstatic && gunicorn django_book_talk.wsgi
