@@ -28,7 +28,17 @@ pipenv install
 ``` 
 
 - Download the Postgres app from their website and start a local server.
-- Create a local database using Postgres to store your data. 
+- Create a local database using Postgres to store your data.
+
+## To Run app
+- To start shell/virtual environment
+```
+pipenv shell
+``` 
+- Type the following command in the activated virtual environment:
+```
+python3 manage.py runserver
+``` 
 
 ## Contributions
 - Source code: [https://github.com/K-Rcode/book-talk-backend](https://github.com/K-Rcode/book-talk-backend)
